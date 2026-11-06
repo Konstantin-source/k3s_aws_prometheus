@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  ENVIRONMENT: "production"
+  DB_HOST: "postgres-service"
+  DB_PORT: "5432"
+  DB_NAME: "community_db"
+  DB_USER: "postgres"
