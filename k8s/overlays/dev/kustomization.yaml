@@ -18,3 +18,7 @@ patches:
       - op: replace
         path: /data/ENVIRONMENT
         value: "development"
+      - op: replace
+        path: /data/DB_HOST
+        value: "dev-postgres-service"
+

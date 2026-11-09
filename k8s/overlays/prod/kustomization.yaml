@@ -13,3 +13,11 @@ resources:
 
 patches:
   - path: replica-patch.yaml
+  - target:
+      kind: ConfigMap
+      name: app-config
+    patch: |-
+      - op: replace
+        path: /data/DB_HOST
+        value: "prod-postgres-service"
+
